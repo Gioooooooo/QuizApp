@@ -1,0 +1,165 @@
+/* Google Fonts - Antonio */
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap");
+/* Start Of  Global styles */
+:root {
+  --white: #ffffff;
+  --primaryColor: #000cff6e;
+  --secondarycolor: #555;
+  --rgba: rgba(57, 30, 216, 0.5);
+  background-color: var(--white);
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Antonio", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--secondaryColor);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--primaryColor);
+  margin-bottom: 5rem;
+  font-weight: 700;
+  font-size: 5.4rem;
+}
+/* End Of  Global styles */
+
+/* Start Of Common */
+
+.container {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* End Of  Common styles */
+
+/* Start Of BUTTONS */
+.btn {
+  font-size: 4.2rem;
+  padding: 3.2rem 0;
+  width: 27rem;
+  text-align: center;
+  border: 0.3rem solid var(--primaryColor);
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--primaryColor);
+  background-color: var(--white);
+  transition: all 1.5s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  border: 0.3rem solid var(--white);
+  color: var(--white);
+  box-shadow: 0 1rem 1rem 0.1rem var(--rgba);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+}
+
+.btn[disabled]:hover {
+  cursor: no-drop;
+  box-shadow: none;
+  transform: none;
+}
+
+/* End Of BUTTONS */
+
+/* Start Of FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 2rem;
+  width: 17rem;
+  padding: 1.8rem;
+  font-size: 2rem;
+  border: 1px solid gray;
+  box-shadow: 0 0.1rem 1.4rem 0 var(--rgba);
+}
+
+input::placeholder {
+  color: var(--primaryColor);
+}
+
+select {
+  width: 30rem;
+  font-size: 2rem;
+}
+.blueStar {
+  color: var(--primaryColor);
+}
+
+/* End Of FORMS */
+
+/* Start of Highscore */
+#highScoresList {
+  list-style: none;
+  padding-left: 0.1rem;
+  margin-bottom: 5rem;
+}
+
+.highScore {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease-in;
+}
+
+.highScore:hover {
+  transform: translateX(10px);
+}
+/* End of Highscore */
+
+/* Start of media  */
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .container {
+    height: 100vh;
+  }
+  .tooltip {
+    display: none;
+  }
+  .btn {
+    font-size: 3rem;
+    width: 20rem;
+    padding: 1rem;
+  }
+}
+
+/* End of media  */

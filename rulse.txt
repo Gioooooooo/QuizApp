@@ -1,0 +1,10 @@
+Quiz App by KUPRAAA
+
+API request makes sure to take 11 questions.(1 Can be avoided)
+Categorys and difficulty can be chosen by user
+Base on number of questions chosen by user questions come randomly and also it is deleted from questions array so that questions woudn't repeat.
+skip can be used only once
+Answers also come randomly so that user cannot manipulate game.
+10 highest Hischores are saved with names.
+
+User can use mouse or keyboard to choose answers or start quiz game.

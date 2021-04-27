@@ -1,0 +1,103 @@
+/* Quiz Container */
+.quiz {
+  height: 40vh;
+}
+/* Start Of option */
+.optionContainer {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--rgba);
+  background-color: var(--white);
+}
+
+.optionContainer:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 var(--rgba);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.optionPrefix {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+.optionText {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* End Of option */
+
+/* Start of true/false  */
+
+.true {
+  background-color: greenyellow;
+}
+
+.false {
+  background-color: red;
+}
+/* End of true/false  */
+
+/* Start of  house */
+
+#house {
+  display: flex;
+  justify-content: space-between;
+}
+
+.housePrefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.houseMainText {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid var(--primaryColor);
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.5rem;
+  background-color: var(--primaryColor);
+  width: 0%;
+}
+/* End of  house */
+
+/* Start of Loader */
+#loader {
+  border: 14rem solid var(--white);
+  border-radius: 50%;
+  border-top: 14rem solid var(--primaryColor);
+  width: 15rem;
+  height: 15rem;
+  animation: goBackCircle 4s ease-in infinite;
+}
+
+@keyframes goBackCircle {
+  0% {
+    transform: rotate(360deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  75% {
+    transform: rotate(480deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* End of Loader */

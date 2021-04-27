@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Quiz By KUPRAAA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./app.css" />
+  <link rel="stylesheet" href="./quiz.css" />
+</head>
+
+<body>
+  <div class="container" id="removeContainer">
+    <div id="questionNumCount" class="quiz container justifyCenter flexColumn">
+      <h1>How many Questions? (1 to 10)</h1>
+      <input id="questionCountNum" type="number" min="1" max="50" value="3">
+      <select id="selectCategory">
+        <option class="selectCategory" value="9">General Knowledge</option>
+        <option class="selectCategory" value="10">Entertainment: Books</option>
+        <option class="selectCategory" value="11">Entertainment: Film</option>
+        <option class="selectCategory" value="12">Entertainment: Music</option>
+        <option class="selectCategory" value="13">Entertainment: Musicals &amp; Theatres</option>
+        <option class="selectCategory" value="14">Entertainment: Television</option>
+        <option class="selectCategory" value="15">Entertainment: Video Games</option>
+        <option class="selectCategory" value="16">Entertainment: Board Games</option>
+        <option class="selectCategory" value="17">Science &amp; Nature</option>
+        <option class="selectCategory" value="18">Science: Computers</option>
+        <option class="selectCategory" value="19">Science: Mathematics</option>
+        <option class="selectCategory" value="20">Mythology</option>
+        <option class="selectCategory" value="21">Sports</option>
+        <option class="selectCategory" value="22">Geography</option>
+        <option class="selectCategory" value="23">History</option>
+        <option class="selectCategory" value="24">Politics</option>
+        <option class="selectCategory" value="25">Art</option>
+        <option class="selectCategory" value="26">Celebrities</option>
+        <option class="selectCategory" value="27">Animals</option>
+        <option class="selectCategory" value="28">Vehicles</option>
+        <option class="selectCategory" value="29">Entertainment: Comics</option>
+        <option class="selectCategory" value="30">Science: Gadgets</option>
+        <option class="selectCategory" value="31">Entertainment: Japanese Anime &amp; Manga</option>
+        <option class="selectCategory" value="32">Entertainment: Cartoon &amp; Animations</option>
+      </select>
+      <br>
+      <h1>Difficulty: </h1>
+      <select id="selectDifficulty">
+        <option class="selectDifficulty" value="easy">Easy</option>
+        <option class="selectDifficulty" value="medium">Medium</option>
+        <option class="selectDifficulty" value="hard">Hard</option>
+
+
+      </select>
+      <br><br>
+      <button href="" id="submit" class="btn">Press enter or this</button>
+    </div>
+  </div>
+
+  <div id="removdisplayNone" class="container displayNone">
+    <div id="loader"></div>
+    <div id="quiz" class="justifyCenter flexColumn displayNone">
+      <div id="house">
+        <div id="shellThing">
+          <p id="progressText" class="housePrefix">
+            Question
+          </p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div id="shellThing">
+          <p class="housePrefix">
+            <i class="fas fa-star blueStar"></i>
+          </p>
+          <h1 class="houseMainText" id="score">
+            0
+          </h1>
+        </div>
+      </div>
+      <h1 id="question"></h1>
+      <h2 class="tooltip">Tooltip: S for skip, Press a for answer A, b for B ...</h2>
+      <div class="optionContainer">
+        <p class="optionText" data-number="1"></p>
+        <p class="optionPrefix">A</p>
+      </div>
+      <div class="optionContainer">
+        <p class="optionText" data-number="2"></p>
+        <p class="optionPrefix">B</p>
+      </div>
+      <div class="optionContainer">
+        <p class="optionText" data-number="3"></p>
+        <p class="optionPrefix">C</p>
+      </div>
+      <div class="optionContainer">
+        <p class="optionText" data-number="4"></p>
+        <p class="optionPrefix">D</p>
+      </div>
+      <button class="btn skip" id="skip">Skip(used once)</button>
+    </div>
+  </div>
+  <script src="./quiz.js"></script>
+</body>
+
+</html>
